@@ -86,7 +86,10 @@ textarea {
     width: calc(50% - 35px); }
 
 header {
-  background-image: url("/img/hero.png");
+  background-image: url("../img/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 555px;
   position: relative; }
   header .header-content-wrapper > * {
@@ -211,14 +214,14 @@ main {
       main .main-content-wrapper .next a {
         text-decoration: none; }
     main .main-content-wrapper .previous::before {
-      content: url("/img/left.png");
+      content: url("../img/left.png");
       position: absolute;
       top: 14px;
       left: -35px; }
     main .main-content-wrapper .next {
       text-align: right; }
       main .main-content-wrapper .next::after {
-        content: url("/img/right.png");
+        content: url("../img/right.png");
         position: absolute;
         top: 14px;
         right: -35px; }
@@ -339,10 +342,12 @@ footer {
       top: 61.4%; } }
 
 @media screen and (max-width: 834px) {
-  header .nav-wrapper .left {
-    padding: 30px 33px; }
-  header .nav-wrapper .right {
-    padding: 30px 27px; }
+  header {
+    background-position-x: 27%; }
+    header .nav-wrapper .left {
+      padding: 30px 33px; }
+    header .nav-wrapper .right {
+      padding: 30px 27px; }
   header .header-content-wrapper ul li {
     font-size: 28.85px; }
     header .header-content-wrapper ul li:not(:first-of-type)::before {

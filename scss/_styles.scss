@@ -107,7 +107,10 @@ textarea {
 }
 
 header {
-  background-image: url('/img/hero.png');
+  background-image: url('../img/hero.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 555px;
   position: relative;
   .header-content-wrapper {
@@ -264,7 +267,7 @@ main {
     }
     .previous {
       &::before {
-        content: url('/img/left.png');
+        content: url('../img/left.png');
         position: absolute;
         top: 14px;
         left: -35px;
@@ -273,7 +276,7 @@ main {
     .next {
       text-align: right;
       &::after {
-        content: url('/img/right.png');
+        content: url('../img/right.png');
         position: absolute;
         top: 14px;
         right: -35px;
